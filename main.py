@@ -4,16 +4,6 @@ import os
 
 FILE_NAME = "expenses.json"
 
-print("1. Add expense")
-print("2. List expenses")
-print("3. Filter by category")
-print("4. Delete expense")
-print("5. Edit expense")
-print("6. Summary by category")
-print("7. Sort expenses")
-print("8. Search expenses")
-print("9. Exit")
-
 def load_expenses():
     if not os.path.exists(FILE_NAME):
         return []
@@ -65,8 +55,8 @@ def list_expenses(expenses):
     for expense in expenses:
         total += expense["amount"]
 
-        print("----------------")
-        print(f"Total spent: {total} €")
+    print("----------------")
+    print(f"Total spent: {total} €")
 
 
 def filter_expenses(expenses):
@@ -252,7 +242,13 @@ def main():
     while True:
         print("\n1. Add expense")
         print("2. List expenses")
-        print("3. Exit")
+        print("3. Filter by category")
+        print("4. Delete expense")
+        print("5. Edit expense")
+        print("6. Summary by category")
+        print("7. Sort expenses")
+        print("8. Search expenses")
+        print("9. Exit")
 
         choice = input("Choose an option: ")
 
