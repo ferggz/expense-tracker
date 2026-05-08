@@ -1,6 +1,7 @@
 from datetime import datetime
 import json
 import os
+import csv
 
 FILE_NAME = "expenses.json"
 
@@ -234,7 +235,28 @@ def search_expenses(expenses):
         return
 
     display_expenses(matching_expenses)
-    
+
+
+def export_to_csv(expenses):
+    if not expenses:
+        print("No expenses found")
+        return
+
+    with open("expenses.csv", "w", newline="", encoding="utf-8") as file:
+        writer = csv.writer(file)
+
+        writer.writerow(["Amount", "Category", "Description", "Date"])
+
+        for expense in expenses:
+            writer.writerow([
+                expense["amount"],
+                expense["category"],
+                expense["description"],
+                expense["date"]
+            ])
+
+    print("Expenses exported to expenses.csv")
+
 
 def main():
     expenses = load_expenses()
@@ -248,7 +270,8 @@ def main():
         print("6. Summary by category")
         print("7. Sort expenses")
         print("8. Search expenses")
-        print("9. Exit")
+        print("9. Export to CSV")
+        print("10. Exit")
 
         choice = input("Choose an option: ")
 
@@ -269,6 +292,8 @@ def main():
         elif choice == "8":
             search_expenses(expenses)
         elif choice == "9":
+            export_to_csv(expenses)
+        elif choice == "10":
             break
         else:
             print("Invalid option")

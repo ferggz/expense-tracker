@@ -1,1 +1,86 @@
-[]
+[
+    {
+        "amount": 99.99,
+        "category": "Subscriptions",
+        "description": "Netflix",
+        "date": "2026-05-08"
+    },
+    {
+        "amount": 15.5,
+        "category": "Food",
+        "description": "Paella",
+        "date": "2026-05-08"
+    },
+    {
+        "amount": 89.99,
+        "category": "Games",
+        "description": "GTA VI",
+        "date": "2026-05-08"
+    },
+    {
+        "amount": 2.5,
+        "category": "Food",
+        "description": "Salmorejo",
+        "date": "2026-05-08"
+    },
+    {
+        "amount": 59.99,
+        "category": "Games",
+        "description": "Kingdom Come: Deliverance 2",
+        "date": "2026-05-08"
+    },
+    {
+        "amount": 10.0,
+        "category": "Food",
+        "description": "Galician octopus",
+        "date": "2026-05-08"
+    },
+    {
+        "amount": 42.99,
+        "category": "Subscriptions",
+        "description": "Prime",
+        "date": "2026-05-08"
+    },
+    {
+        "amount": 18.99,
+        "category": "Clothing",
+        "description": "Zara",
+        "date": "2026-05-08"
+    },
+    {
+        "amount": 72.0,
+        "category": "Clothing",
+        "description": "6ixt4our",
+        "date": "2026-05-08"
+    },
+    {
+        "amount": 44.99,
+        "category": "Games",
+        "description": "Baldur's Gate 3",
+        "date": "2026-05-08"
+    },
+    {
+        "amount": 119.99,
+        "category": "Clothing",
+        "description": "Nike",
+        "date": "2026-05-08"
+    },
+    {
+        "amount": 119.95,
+        "category": "Clothing",
+        "description": "Adidas",
+        "date": "2026-05-08"
+    },
+    {
+        "amount": 18.0,
+        "category": "Food",
+        "description": "Picanha",
+        "date": "2026-05-08"
+    },
+    {
+        "amount": 10.0,
+        "category": "Food",
+        "description": "Tortilla",
+        "date": "2026-05-08"
+    }
+]
