@@ -82,5 +82,11 @@
         "category": "Food",
         "description": "Tortilla",
         "date": "2026-05-08"
+    },
+    {
+        "amount": 48.74747,
+        "category": "Subscription",
+        "description": "HBO",
+        "date": "2026-05-11"
     }
 ]
